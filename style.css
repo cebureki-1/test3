@@ -1,0 +1,61 @@
+
+.block{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    transition: all 2s ease;
+}
+.block:hover{
+   animation: block 2s ease;
+    margin: 20px;
+    transform: scale(1.1);
+    color: pink;
+}
+@keyframes block{
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        background-color: pink;
+        rotate: 360deg;
+    }
+}
+.ball2{
+    border:dotted;
+    width: 400px;
+    color: pink;
+}
+.ball{
+    width: 200px;
+    height: 200px; 
+    background-color: red;
+    border-radius: 100%;
+    animation: ball 2s infinite;
+}
+@keyframes ball{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+    animation: img 2s ease infinite ;
+}
+@keyframes img{
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
+}
